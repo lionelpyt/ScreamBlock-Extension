@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ScreamBlock</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    input[type="text"] { width: calc(100% - 22px); padding: 5px; }
+    button { width: 100%; padding: 5px; margin-top: 5px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 5px 0; }
+    .remove-button { margin-left: 10px; color: red; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>ScreamBlock</h1>
+  <input type="text" id="siteUrl" placeholder="Enter URL to block">
+  <button id="addSiteButton">Add</button>
+  <h2>Blocked Sites</h2>
+  <ul id="blockedSitesList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>

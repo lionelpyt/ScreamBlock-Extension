@@ -1,36 +1,42 @@
 {
-    "manifest_version": 3,
-    "name": "Censure Parentale",
-    "version": "1.0",
-    "permissions": [
-        "declarativeNetRequest",
-        "declarativeNetRequestWithHostAccess",
-        "tabs",
-        "webNavigation"
-    ],
-    "host_permissions": [
-        "*://*.youtube.com/*",
-        "*://*.site2.net/*"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "declarative_net_request": {
-        "rule_resources": [{
-            "id": "ruleset_1",
-            "enabled": true,
-            "path": "rules.json"
-        }]
-    },
-    "icons": {
-        "16": "screamer.png",
-        "48": "screamer.png",
-        "128": "screamer.png"
-    },
-    "web_accessible_resources": [
-        {
-            "resources": ["screamer.html", "screamer.png", "screamer.mp3"],
-            "matches": ["<all_urls>"]
-        }
-    ]
+  "manifest_version": 3,
+  "name": "Censure Parentale",
+  "version": "1.0",
+  "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess",
+      "storage"
+  ],
+  "host_permissions": [
+      "*://*/*"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+      "rule_resources": [{
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+      }]
+  },
+  "icons": {
+      "16": "screamer.png",
+      "48": "screamer.png",
+      "128": "screamer.png"
+  },
+  "web_accessible_resources": [
+      {
+          "resources": ["screamer.html", "screamer.png", "screamer.mp3", "screamer.js"],
+          "matches": ["<all_urls>"]
+      }
+  ],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "screamer.png",
+          "48": "screamer.png",
+          "128": "screamer.png"
+      }
+  }
 }
