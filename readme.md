@@ -18,7 +18,7 @@ Pour ajouter l'extension :
 Tout dabord recuperer le repertoire :
  git clone "https://github.com/lionelpyt/ScreamBlock-Extension.git"
 ```
-```
+
 ensuite rendez-vous dans votre navigateur dans la partie extensions :
 ![ExplicationExtension](ReadmeImages/extension.png)
 
