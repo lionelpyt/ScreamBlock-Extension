@@ -20,5 +20,5 @@ Tout dabord recuperer le repertoire :
 ```
 ```
 ensuite rendez-vous dans votre navigateur dans la partie extensions :
-![alt text](image.png)
+![ExplicationExtension](ReadmeImages/extension.png)
 
